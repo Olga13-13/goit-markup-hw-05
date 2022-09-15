@@ -76,6 +76,7 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+    
 }
 
 
@@ -87,6 +88,8 @@ body {
 .header-navigation {
     display: flex;
     align-items: center;
+    
+   
 }
 
 .logo-header {
@@ -114,6 +117,7 @@ body {
 .menu-link {
     display: flex;
     column-gap: 30px;
+    position: relative;
     margin: 0;
     padding: 0;
     font-weight: 500;
@@ -121,6 +125,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-dark); 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .menu-link:hover,
@@ -128,10 +134,24 @@ body {
     color: var(--accent-color);
 }
 
+.menu-link.caren-studio::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    top: 44px;
+    
+}
+
 .menu-item {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    
 }
 
 .contact-mail {
@@ -141,6 +161,7 @@ body {
     column-gap: 10px;
     width: 161px;
     height: 16px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail:hover,
@@ -169,6 +190,7 @@ body {
     column-gap: 10px;
     width: 142px;
     height: 16px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -511,15 +533,18 @@ body {
     align-items: center;
     color: var(--primary-text-color-theme-dark); 
     padding: 6px 22px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters:active,
 .filters:hover,
 .filters:focus {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-color);
     color: var(--secondary-text-color-theme-light);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-color: #2196F3;
+    
 }
 
 /* =========== /PORTFOLIO-FILTERS ===========*/
@@ -666,6 +691,7 @@ body {
 
 .contact-menu-map {
     color: var(--secondary-text-color-theme-light);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-menu-mail{
@@ -673,12 +699,14 @@ body {
     border: 1px solid var(--secondary-color-dark);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     
 
 .contact-menu-tel {
     color: rgba(255, 255, 255, 0.6);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-menu-map:hover,
@@ -732,6 +760,7 @@ body {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
