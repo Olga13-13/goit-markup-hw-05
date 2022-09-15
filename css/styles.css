@@ -131,7 +131,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-    color: var(--accent-color);
+    color: var(--accent-color);   
 }
 
 .menu-link.caren-studio::after {
@@ -144,7 +144,7 @@ body {
     bottom: 0;
     left: 0;
     top: 44px;
-    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item {
@@ -267,6 +267,7 @@ body {
     width: 216px;
     left: 692px;
     top: 430px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-modal-open-btn:hover,
@@ -373,6 +374,35 @@ body {
     color: var(--primary-text-color-theme-dark);
     margin-bottom: 50px;
 }
+
+.work-list-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-work {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    top: 224px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    overflow: auto;
+}
+
+
 /* =========== /WORK ===========*/
 
 /* =========== COMANDA ===========*/
@@ -440,6 +470,7 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: #ffffff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -487,6 +518,7 @@ body {
     width: 100%;
     height: 100%;   
     background-color: #ffffff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -539,7 +571,6 @@ body {
 .filters:active,
 .filters:hover,
 .filters:focus {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-color);
     color: var(--secondary-text-color-theme-light);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -599,7 +630,6 @@ body {
 .portfolio-post:hover .overlay,
 .portfolio-post:focus .overlay {
     transform: translateY(0%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box-mini {
